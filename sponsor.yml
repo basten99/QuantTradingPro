@@ -1,0 +1,121 @@
+# QuantTradingPro Sponsorship Tiers
+# 赞助层级配置
+
+sponsorship_tiers:
+  bronze:
+    name: "Bronze Sponsor"
+    monthly_amount: 10  # CNY
+    benefits:
+      - "Early access to new features"
+      - "Exclusive sponsor badge in README"
+      - "Monthly newsletter with updates"
+      - "Access to sponsor-only Discord channel"
+    description: "Perfect for individual developers and students"
+
+  silver:
+    name: "Silver Sponsor"
+    monthly_amount: 50  # CNY
+    benefits:
+      - "All Bronze benefits"
+      - "Exclusive trading strategies"
+      - "Priority support"
+      - "Monthly strategy performance reports"
+      - "Early access to research papers"
+    description: "For serious traders and small funds"
+
+  gold:
+    name: "Gold Sponsor"
+    monthly_amount: 200  # CNY
+    benefits:
+      - "All Silver benefits"
+      - "Personalized consulting (2 hours/month)"
+      - "Custom strategy development"
+      - "Enterprise features access"
+      - "Dedicated support channel"
+      - "Co-branding opportunities"
+    description: "For professional traders and institutions"
+
+  platinum:
+    name: "Platinum Sponsor"
+    monthly_amount: 1000  # CNY
+    benefits:
+      - "All Gold benefits"
+      - "Full source code access"
+      - "Custom integration support"
+      - "White-label solutions"
+      - "Quarterly strategy review meetings"
+      - "Featured on project homepage"
+    description: "For hedge funds and financial institutions"
+
+# Sponsorship Goals
+goals:
+  - amount: 500
+    description: "Monthly server costs"
+    achieved: false
+    
+  - amount: 2000
+    description: "Full-time developer support"
+    achieved: false
+    
+  - amount: 5000
+    description: "Research and development fund"
+    achieved: false
+    
+  - amount: 10000
+    description: "Open source sustainability"
+    achieved: false
+
+# How funds are used
+fund_usage:
+  - "Server and infrastructure costs (40%)"
+  - "Development and maintenance (30%)"
+  - "Research and strategy development (20%)"
+  - "Community events and education (10%)"
+
+# Transparency
+transparency:
+  monthly_reports: true
+  open_books: true
+  github_sponsors: true
+  payment_methods:
+    - "GitHub Sponsors"
+    - "Alipay"
+    - "WeChat Pay"
+    - "Bank Transfer"
+
+# Contact for corporate sponsorship
+corporate_contact:
+  email: "basten99@github.com"
+  requirements:
+    - "Minimum 6-month commitment"
+    - "Company logo placement"
+    - "Case study collaboration"
+
+# Special thanks to current sponsors
+current_sponsors:
+  - name: "Early Backers"
+    tier: "Bronze"
+    since: "2026-03-11"
+
+# FAQ
+faq:
+  - question: "How do I become a sponsor?"
+    answer: "Click the 'Sponsor' button on our GitHub repository or contact us directly for corporate sponsorship."
+  
+  - question: "Can I sponsor for just one month?"
+    answer: "Yes, you can cancel anytime. However, some benefits require continuous sponsorship."
+  
+  - question: "Are sponsorships tax-deductible?"
+    answer: "For individuals, please consult your tax advisor. For companies, sponsorship may be considered a business expense."
+  
+  - question: "How are funds distributed?"
+    answer: "See the 'fund_usage' section above. We publish monthly transparency reports."
+  
+  - question: "Can I remain anonymous?"
+    answer: "Yes, you can choose to be an anonymous sponsor through GitHub Sponsors."
+
+# Legal
+legal:
+  terms_of_service: "https://github.com/basten99/QuantTradingPro/blob/main/TERMS.md"
+  privacy_policy: "https://github.com/basten99/QuantTradingPro/blob/main/PRIVACY.md"
+  refund_policy: "No refunds for digital products and services. Contact us for exceptional circumstances."
