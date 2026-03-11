@@ -12,7 +12,7 @@ def test_import():
     try:
         from src.strategies.mean_reversion import MeanReversionStrategy
         from src.data.fetchers import DataFetcher
-        from src.risk_management.position_sizing import PositionSizer
+        from src.risk_management.position_sizing import PositionSizing
         assert True
     except ImportError as e:
         pytest.fail(f"Import failed: {e}")
@@ -39,13 +39,15 @@ def test_mean_reversion_strategy():
     
     strategy = MeanReversionStrategy(
         lookback_period=20,
-        zscore_threshold=2.0,
-        position_size=0.1
+        entry_zscore=2.0,
+        exit_zscore=0.5,
+        stop_loss=0.05,
+        take_profit=0.1
     )
     
     assert strategy.lookback_period == 20
-    assert strategy.zscore_threshold == 2.0
-    assert strategy.position_size == 0.1
+    assert strategy.entry_zscore == 2.0
+    assert strategy.max_position_size == 0.1
     
     # Test position enum
     assert Position.LONG.value == "long"
