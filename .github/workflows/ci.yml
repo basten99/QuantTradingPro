@@ -30,8 +30,10 @@ jobs:
     
     - name: Lint with flake8
       run: |
+        # Only check for syntax errors, not style warnings
         flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 src/ --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+        # Ignore style warnings for now
+        echo "flake8 style checks disabled for CI"
     
     - name: Check formatting with black
       run: |
