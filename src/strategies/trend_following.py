@@ -394,4 +394,20 @@ class TrendFollowingStrategy:
                            color='orange', marker='x', s=50, alpha=0.5, zorder=4)
             if signals['take_profit'].iloc[i] != 0:
                 ax1.scatter(signals.index[i], signals['take_profit'].iloc[i], 
-                           color='purple', marker='x', s=50, alpha=0.5
+                           color='purple', marker='x', s=50, alpha=0.5, zorder=4)
+        plt.tight_layout()
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        
+        return fig
+
+    def get_default_parameters(self) -> Dict[str, Any]:
+        """获取默认参数"""
+        return {
+            'fast_period': 10,
+            'slow_period': 30,
+            'position_size': 0.1,
+            'stop_loss_pct': 0.02,
+            'take_profit_pct': 0.05,
+        }

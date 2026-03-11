@@ -25,7 +25,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        # 只安装文档构建所需的核心依赖
+        pip install numpy>=1.21.0 pandas>=1.3.0 matplotlib>=3.4.0
         pip install sphinx sphinx-rtd-theme nbsphinx myst-parser sphinx-autodoc-typehints
     
     - name: Build documentation
