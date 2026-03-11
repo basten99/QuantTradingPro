@@ -107,6 +107,7 @@ jobs:
 
   check-dead-links:
     runs-on: ubuntu-latest
+    if: false  # Disabled - site not deployed yet
     
     steps:
     - uses: actions/checkout@v4
